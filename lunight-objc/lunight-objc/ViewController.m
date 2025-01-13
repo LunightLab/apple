@@ -27,10 +27,46 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self loadDataFromJSON];
     
-//    [self setupData];
     [self setupTableView];
     [self setupSearchBar];
     [self.tableView reloadData]; // 데이터 갱신
+
+    // 네비게이션 타이틀
+    self.title = @"objc";
+    
+    // 왼쪽 버튼 추가
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"info"
+                                                                   style:UIBarButtonItemStylePlain
+                                                                  target:self
+                                                                  action:@selector(leftButtonTapped)];
+    self.navigationItem.leftBarButtonItem = leftButton;
+    
+    // 오른쪽 버튼 추가
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"temp"
+                                                                    style:UIBarButtonItemStylePlain
+                                                                   target:self
+                                                                   action:@selector(rightButtonTapped)];
+//    self.navigationItem.rightBarButtonItem = rightButton;
+    
+    // 네비게이션 바 스타일 설정
+        UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
+        [appearance configureWithOpaqueBackground]; // 불투명 배경
+        appearance.backgroundColor = [UIColor systemBlueColor]; // 배경색 설정
+        appearance.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]}; // 제목 텍스트 색상
+
+        self.navigationController.navigationBar.standardAppearance = appearance;
+        self.navigationController.navigationBar.scrollEdgeAppearance = appearance;
+        self.navigationController.navigationBar.tintColor = [UIColor whiteColor]; // 버튼 색상
+    
+}
+
+// 버튼 동작
+- (void)leftButtonTapped {
+    NSLog(@"Left button tapped");
+}
+
+- (void)rightButtonTapped {
+    NSLog(@"Right button tapped");
 }
 
 // 테이블 뷰 설정
@@ -98,14 +134,17 @@
             break;
     }
     // 이미지 크기 조정
-    CGSize newSize = CGSizeMake(24, 24); // 원하는 크기
+    CGSize newSize = CGSizeMake(35, 35); // 원하는 크기
     UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
     [originalImage drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
     UIImage *resizedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
     cell.imageView.image = resizedImage;
-
+    
+    // 기본 꺽쇠 모양 액세서리 설정
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
     return cell;
 }
 
@@ -114,11 +153,24 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     ViewTableItem *item = self.isFiltering ? self.filteredItems[indexPath.row] : self.dataByYear[self.sectionTitles[indexPath.section]][indexPath.row];
-
+    
+    // 선택한 셀의 데이터 가져오기
+    NSString *sectionKey = self.sectionTitles[indexPath.section];
+    ViewTableItem *selectedItem = self.dataByYear[sectionKey][indexPath.row];
+    
     Class viewControllerClass = NSClassFromString(item.viewControllerName);
     if (viewControllerClass) {
+        
         UIViewController *viewController = [[viewControllerClass alloc] init];
+        viewController.title = [NSString stringWithFormat:@"[%@]%@", sectionKey, selectedItem.title];
         [self.navigationController pushViewController:viewController animated:YES];
+        
+    }else{
+        if([sectionKey isEqualToString:@"2024"])
+            [self simpleShowAlert:@"알림" :@"프로젝트폴더 참고"];
+        else
+            [self simpleShowAlert:@"알림" :@"준비중"];
+        
     }
 }
 
@@ -186,5 +238,32 @@
     // 데이터 초기화
     self.dataByYear = parsedData;
     self.sectionTitles = [self.dataByYear.allKeys sortedArrayUsingSelector:@selector(compare:)];
+}
+
+- (void)simpleShowAlert:(NSString *)title :(NSString *)message {
+    
+    // UIAlertController 생성
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title
+                                                                   message:message
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+
+    // 확인 버튼 추가
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"확인"
+                                                       style:UIAlertActionStyleDefault
+                                                     handler:^(UIAlertAction * _Nonnull action) {
+//        NSLog(@"확인 버튼 클릭됨");
+    }];
+    [alert addAction:okAction];
+
+//    // 취소 버튼 추가 (선택 사항)
+//    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"취소"
+//                                                           style:UIAlertActionStyleCancel
+//                                                         handler:^(UIAlertAction * _Nonnull action) {
+//        NSLog(@"취소 버튼 클릭됨");
+//    }];
+//    [alert addAction:cancelAction];
+
+    // Alert 표시
+    [self presentViewController:alert animated:YES completion:nil];
 }
 @end

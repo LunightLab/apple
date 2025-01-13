@@ -2,25 +2,38 @@
   "2024": [
     {
     
-      "title": "skeleton animation",
-      "subtitle": "스켈레톤 애니메이션처리",
+      "title": "skeleton & marquee animation",
+      "subtitle": "스켈레톤과 마퀴애니메이션처리",
       "viewControllerName": "DetailViewController",
-      "taskStatus" : 0
+      "taskStatus" : 2
     },
-    {
-      "title": "marquee test",
-      "subtitle": "marquee, 마퀴",
-      "viewControllerName": "DetailViewController",
-      "taskStatus" : 0
-    }
-
   ],
   "2025": [
     {
-      "title": "ing",
-      "subtitle": "Subtitle 2",
-      "viewControllerName": "OtherViewController",
+      "title": "DatePicker",
+      "subtitle": "데이트피커 테스트",
+      "viewControllerName": "DatePickerViewController",
+      "taskStatus" : 1
+    },
+    {
+      "title": "lottie",
+      "subtitle": "로띠 테스트",
+      "viewControllerName": "LottieTestViewController",
+      "taskStatus" : 0
+    },
+    {
+      "title": "CustomPopup",
+      "subtitle": "커스텀 팝업 테스트",
+      "viewControllerName": "LottieTestViewController",
+      "taskStatus" : 0
+    },
+    {
+      "title": "CustomAlert",
+      "subtitle": "커스텀 Alert 테스트",
+      "viewControllerName": "LottieTestViewController",
       "taskStatus" : 0
     }
+    
   ]
 }
+
