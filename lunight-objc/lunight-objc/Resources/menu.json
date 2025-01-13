@@ -1,0 +1,26 @@
+{
+  "2024": [
+    {
+    
+      "title": "skeleton animation",
+      "subtitle": "스켈레톤 애니메이션처리",
+      "viewControllerName": "DetailViewController",
+      "taskStatus" : 0
+    },
+    {
+      "title": "marquee test",
+      "subtitle": "marquee, 마퀴",
+      "viewControllerName": "DetailViewController",
+      "taskStatus" : 0
+    }
+
+  ],
+  "2025": [
+    {
+      "title": "ing",
+      "subtitle": "Subtitle 2",
+      "viewControllerName": "OtherViewController",
+      "taskStatus" : 0
+    }
+  ]
+}
