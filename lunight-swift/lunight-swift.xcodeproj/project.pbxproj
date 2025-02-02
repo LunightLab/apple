@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		13C25DEC2D34BA8C00710034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C25DCA2D34BA8A00710034 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C25DD12D34BA8A00710034;
+			remoteInfo = "lunight-swift";
+		};
+		13C25DF62D34BA8C00710034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C25DCA2D34BA8A00710034 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C25DD12D34BA8A00710034;
+			remoteInfo = "lunight-swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13C25DD22D34BA8A00710034 /* lunight-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lunight-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C25DEB2D34BA8C00710034 /* lunight-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lunight-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C25DF52D34BA8C00710034 /* lunight-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lunight-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		13C25DFD2D34BA8C00710034 /* Exceptions for "lunight-swift" folder in "lunight-swift" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 13C25DD12D34BA8A00710034 /* lunight-swift */;
+		};
+		13C25E4B2D34C0E300710034 /* Exceptions for "lunight-swift" folder in "lunight-swiftTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ViewController.xib,
+			);
+			target = 13C25DEA2D34BA8C00710034 /* lunight-swiftTests */;
+		};
+		13C25E4C2D34C0E300710034 /* Exceptions for "lunight-swift" folder in "lunight-swiftUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ViewController.xib,
+			);
+			target = 13C25DF42D34BA8C00710034 /* lunight-swiftUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		13C25DD42D34BA8A00710034 /* lunight-swift */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				13C25DFD2D34BA8C00710034 /* Exceptions for "lunight-swift" folder in "lunight-swift" target */,
+				13C25E4B2D34C0E300710034 /* Exceptions for "lunight-swift" folder in "lunight-swiftTests" target */,
+				13C25E4C2D34C0E300710034 /* Exceptions for "lunight-swift" folder in "lunight-swiftUITests" target */,
+			);
+			path = "lunight-swift";
+			sourceTree = "<group>";
+		};
+		13C25DEE2D34BA8C00710034 /* lunight-swiftTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "lunight-swiftTests";
+			sourceTree = "<group>";
+		};
+		13C25DF82D34BA8C00710034 /* lunight-swiftUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "lunight-swiftUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13C25DCF2D34BA8A00710034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C25DE82D34BA8C00710034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C25DF22D34BA8C00710034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13C25DC92D34BA8A00710034 = {
+			isa = PBXGroup;
+			children = (
+				13C25DD42D34BA8A00710034 /* lunight-swift */,
+				13C25DEE2D34BA8C00710034 /* lunight-swiftTests */,
+				13C25DF82D34BA8C00710034 /* lunight-swiftUITests */,
+				13C25DD32D34BA8A00710034 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13C25DD32D34BA8A00710034 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13C25DD22D34BA8A00710034 /* lunight-swift.app */,
+				13C25DEB2D34BA8C00710034 /* lunight-swiftTests.xctest */,
+				13C25DF52D34BA8C00710034 /* lunight-swiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13C25DD12D34BA8A00710034 /* lunight-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C25DFE2D34BA8C00710034 /* Build configuration list for PBXNativeTarget "lunight-swift" */;
+			buildPhases = (
+				13C25DCE2D34BA8A00710034 /* Sources */,
+				13C25DCF2D34BA8A00710034 /* Frameworks */,
+				13C25DD02D34BA8A00710034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				13C25DD42D34BA8A00710034 /* lunight-swift */,
+			);
+			name = "lunight-swift";
+			packageProductDependencies = (
+			);
+			productName = "lunight-swift";
+			productReference = 13C25DD22D34BA8A00710034 /* lunight-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13C25DEA2D34BA8C00710034 /* lunight-swiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C25E032D34BA8C00710034 /* Build configuration list for PBXNativeTarget "lunight-swiftTests" */;
+			buildPhases = (
+				13C25DE72D34BA8C00710034 /* Sources */,
+				13C25DE82D34BA8C00710034 /* Frameworks */,
+				13C25DE92D34BA8C00710034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13C25DED2D34BA8C00710034 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				13C25DEE2D34BA8C00710034 /* lunight-swiftTests */,
+			);
+			name = "lunight-swiftTests";
+			packageProductDependencies = (
+			);
+			productName = "lunight-swiftTests";
+			productReference = 13C25DEB2D34BA8C00710034 /* lunight-swiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13C25DF42D34BA8C00710034 /* lunight-swiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C25E062D34BA8C00710034 /* Build configuration list for PBXNativeTarget "lunight-swiftUITests" */;
+			buildPhases = (
+				13C25DF12D34BA8C00710034 /* Sources */,
+				13C25DF22D34BA8C00710034 /* Frameworks */,
+				13C25DF32D34BA8C00710034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13C25DF72D34BA8C00710034 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				13C25DF82D34BA8C00710034 /* lunight-swiftUITests */,
+			);
+			name = "lunight-swiftUITests";
+			packageProductDependencies = (
+			);
+			productName = "lunight-swiftUITests";
+			productReference = 13C25DF52D34BA8C00710034 /* lunight-swiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13C25DCA2D34BA8A00710034 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					13C25DD12D34BA8A00710034 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					13C25DEA2D34BA8C00710034 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 13C25DD12D34BA8A00710034;
+					};
+					13C25DF42D34BA8C00710034 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 13C25DD12D34BA8A00710034;
+					};
+				};
+			};
+			buildConfigurationList = 13C25DCD2D34BA8A00710034 /* Build configuration list for PBXProject "lunight-swift" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13C25DC92D34BA8A00710034;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 13C25DD32D34BA8A00710034 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13C25DD12D34BA8A00710034 /* lunight-swift */,
+				13C25DEA2D34BA8C00710034 /* lunight-swiftTests */,
+				13C25DF42D34BA8C00710034 /* lunight-swiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13C25DD02D34BA8A00710034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C25DE92D34BA8C00710034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C25DF32D34BA8C00710034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13C25DCE2D34BA8A00710034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C25DE72D34BA8C00710034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C25DF12D34BA8C00710034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13C25DED2D34BA8C00710034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C25DD12D34BA8A00710034 /* lunight-swift */;
+			targetProxy = 13C25DEC2D34BA8C00710034 /* PBXContainerItemProxy */;
+		};
+		13C25DF72D34BA8C00710034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C25DD12D34BA8A00710034 /* lunight-swift */;
+			targetProxy = 13C25DF62D34BA8C00710034 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13C25DFF2D34BA8C00710034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58R9JPRMHA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "lunight-swift/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lunightlab.lunight-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13C25E002D34BA8C00710034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58R9JPRMHA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "lunight-swift/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lunightlab.lunight-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		13C25E012D34BA8C00710034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13C25E022D34BA8C00710034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13C25E042D34BA8C00710034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lunightlab.lunight-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lunight-swift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lunight-swift";
+			};
+			name = Debug;
+		};
+		13C25E052D34BA8C00710034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lunightlab.lunight-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lunight-swift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lunight-swift";
+			};
+			name = Release;
+		};
+		13C25E072D34BA8C00710034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lunightlab.lunight-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "lunight-swift";
+			};
+			name = Debug;
+		};
+		13C25E082D34BA8C00710034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lunightlab.lunight-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "lunight-swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13C25DCD2D34BA8A00710034 /* Build configuration list for PBXProject "lunight-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C25E012D34BA8C00710034 /* Debug */,
+				13C25E022D34BA8C00710034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13C25DFE2D34BA8C00710034 /* Build configuration list for PBXNativeTarget "lunight-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C25DFF2D34BA8C00710034 /* Debug */,
+				13C25E002D34BA8C00710034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13C25E032D34BA8C00710034 /* Build configuration list for PBXNativeTarget "lunight-swiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C25E042D34BA8C00710034 /* Debug */,
+				13C25E052D34BA8C00710034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13C25E062D34BA8C00710034 /* Build configuration list for PBXNativeTarget "lunight-swiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C25E072D34BA8C00710034 /* Debug */,
+				13C25E082D34BA8C00710034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13C25DCA2D34BA8A00710034 /* Project object */;
+}
