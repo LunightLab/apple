@@ -16,12 +16,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     NSLog(@"AppDelegate: didFinishLaunchingWithOptions called");
+    
+    // Apple TeamID값
+    NSString *appIdentifierPrefix = [[NSBundle mainBundle]  objectForInfoDictionaryKey:@"AppIdentifierPrefix"];
+    NSString *sAccessGroup = [NSString stringWithFormat:@"%@%@",appIdentifierPrefix, KEYCHAIN_ACCESS_GROUP];
+    // UUID 생성
+    NSUUID *deviceUUID = [UIDevice currentDevice].identifierForVendor;
+    NSString *deviceID = [deviceUUID UUIDString];
+    
+    NSLog(@":name: %@" , [UIDevice currentDevice].name);
+    NSLog(@":model: %@" , [UIDevice currentDevice].model);
+    NSLog(@":accessibilityHint: %@" , [UIDevice currentDevice].accessibilityHint);
+    NSLog(@":accessibilityLabel: %@" , [UIDevice currentDevice].accessibilityLabel);
+    NSLog(@":identifierForVendor: %@" , deviceUUID);
+    NSLog(@":deviceUUID: %@" , deviceID);
+
     return YES; // UIWindow는 SceneDelegate에서 관리
 }
 
-
 #pragma mark - UISceneSession lifecycle
-
 
 - (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
     // Called when a new scene session is being created.

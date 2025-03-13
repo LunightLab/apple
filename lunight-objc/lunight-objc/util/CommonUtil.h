@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#define KEYCHAIN_ACCESS_GROUP       @"lab.lunightlab"
 
 @interface CommonUtil :NSObject
 @end
