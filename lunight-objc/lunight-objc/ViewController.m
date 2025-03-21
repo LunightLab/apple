@@ -5,7 +5,10 @@
 //  Created by lunight on 1/13/25.
 //
 
+
+
 #import "ViewController.h"
+#import "ObjcLogger.h"
 
 @interface ViewController ()
 
@@ -33,7 +36,7 @@
 
     // 네비게이션 타이틀
     self.title = @"objc";
-    
+
     // 왼쪽 버튼 추가
     UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"info"
                                                                    style:UIBarButtonItemStylePlain
@@ -57,6 +60,18 @@
         self.navigationController.navigationBar.standardAppearance = appearance;
         self.navigationController.navigationBar.scrollEdgeAppearance = appearance;
         self.navigationController.navigationBar.tintColor = [UIColor whiteColor]; // 버튼 색상
+    
+    // 기본적인 로깅 (타임스탬프만 포함)
+    [ObjCLogger logInfo:@"사용자가 로그인했습니다"];
+
+    // 카테고리 지정
+    [ObjCLogger logInfo:@"API 호출 시작" category:@"network"];
+    NSLog(@"TTTTT");
+    // 민감한 정보 로깅
+    LOG_PRIVATE(@"사용자 ID: user12345");
+
+    // 디버그 로깅
+    LOG_DEBUG(@"UI 디버그 정보");
     
 }
 
