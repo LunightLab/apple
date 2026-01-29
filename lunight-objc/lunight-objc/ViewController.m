@@ -9,6 +9,8 @@
 
 #import "ViewController.h"
 #import "ObjcLogger.h"
+#include "CustomPopupViewController.h"
+#import "CommonCrypto/CommonDigest.h"
 
 @interface ViewController ()
 
@@ -73,6 +75,43 @@
     // 디버그 로깅
     LOG_DEBUG(@"UI 디버그 정보");
     
+    NSString *x = [self generateHashedUUID];
+    
+    
+    
+}
+
+/**
+ * UUID를 생성하고 해시 값으로 변환한 뒤 마지막 12자리를 대문자로 반환합니다.
+ * @return 해시 값의 마지막 12자리 대문자 문자열
+ */
+- (NSString *)generateHashedUUID {
+    
+    // 1. 새로운 UUID 생성
+    NSUUID *uuid = [NSUUID UUID];
+    NSString *uuidString = [uuid UUIDString];
+    
+    // 하이픈제거(length : 32)
+    uuidString = [uuidString stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    
+    // 2. UUID 문자열을 해시로 변환
+    NSData *data = [uuidString dataUsingEncoding:NSUTF8StringEncoding];
+    uint8_t digest[CC_SHA256_DIGEST_LENGTH];
+    
+    CC_SHA256(data.bytes, (CC_LONG)data.length, digest);
+    
+    // 3. 해시 값을 16진수 문자열로 변환
+    NSMutableString *hashedString = [NSMutableString stringWithCapacity:CC_SHA256_DIGEST_LENGTH * 2];
+    
+    for (int i = 0; i < CC_SHA256_DIGEST_LENGTH; i++) {
+        [hashedString appendFormat:@"%02x", digest[i]];
+    }
+    
+    // 4. 해시 값의 마지막 12자리를 추출하고 대문자로 변환
+    NSUInteger length = [hashedString length];
+    NSString *last12Chars = [[hashedString substringFromIndex:length - 12] uppercaseString];
+    
+    return last12Chars;
 }
 
 // 버튼 동작
@@ -175,10 +214,17 @@
     
     Class viewControllerClass = NSClassFromString(item.viewControllerName);
     if (viewControllerClass) {
-        
-        UIViewController *viewController = [[viewControllerClass alloc] init];
-        viewController.title = [NSString stringWithFormat:@"[%@]%@", sectionKey, selectedItem.title];
-        [self.navigationController pushViewController:viewController animated:YES];
+        if([item.title isEqualToString:@"popup animation"]) {
+//            CustomPopupViewController *popupVC = [[CustomPopupViewController alloc] initWithContentXib:@"CustomPopupViewController"];
+//            [popupVC presentFromViewController:self];
+            CustomPopupViewController *popupVC = [[CustomPopupViewController alloc] init];  // 또는 initWithContentXib:nil
+            [popupVC presentFromViewController:self];
+            
+        }else{
+            UIViewController *viewController = [[viewControllerClass alloc] init];
+            viewController.title = [NSString stringWithFormat:@"[%@]%@", sectionKey, selectedItem.title];
+            [self.navigationController pushViewController:viewController animated:YES];
+        }
         
     }else{
         if([sectionKey isEqualToString:@"2024"])

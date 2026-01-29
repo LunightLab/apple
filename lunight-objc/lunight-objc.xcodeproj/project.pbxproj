@@ -42,6 +42,7 @@
 			membershipExceptions = (
 				2025/datepicker/DatePickerViewController.m,
 				2025/datepicker/DatePickerViewController.xib,
+				2026/CustomPopupViewController.xib,
 				ViewController.xib,
 			);
 			target = 13C25DAA2D34BA3B00710034 /* lunight-objcTests */;
@@ -51,6 +52,7 @@
 			membershipExceptions = (
 				2025/datepicker/DatePickerViewController.m,
 				2025/datepicker/DatePickerViewController.xib,
+				2026/CustomPopupViewController.xib,
 				ViewController.xib,
 			);
 			target = 13C25DB42D34BA3B00710034 /* lunight-objcUITests */;

@@ -34,6 +34,15 @@
       "taskStatus" : 0
     }
     
+  ],
+  "2026": [
+    {
+    
+      "title": "popup animation",
+      "subtitle": "popup",
+      "viewControllerName": "CustomPopupViewController",
+      "taskStatus" : 2
+    },
   ]
 }
 
